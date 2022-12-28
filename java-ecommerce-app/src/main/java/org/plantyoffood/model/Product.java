@@ -107,7 +107,7 @@ public class Product {
 			int id = Integer.parseInt(row[0]);
 			String name = row[1];
 			String date = row[2];
-			double price = Double.parseDouble(row[3].replace("€", "").replace(",", "."));
+			double price = Double.parseDouble(row[3].replace("€", "").replace(",", ".").trim());
 			String brand = row[4];
 			boolean availability = row[5].equalsIgnoreCase("si");
 			
